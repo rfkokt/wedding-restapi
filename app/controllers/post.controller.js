@@ -15,9 +15,10 @@ exports.findAll = (req, res) => {
 
 exports.create = (req, res) => {
     const post = new Post({
-        title: req.body.title,
-        body: req.body.body,
-        published: req.body.published ? req.body.published : false
+        nama: req.body.nama,
+        hubungan: req.body.hubungan,
+        doa: req.body.doa,
+        hadir: req.body.hadir,
     })
 
     post.save(post)

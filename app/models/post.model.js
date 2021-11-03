@@ -1,9 +1,10 @@
 module.exports = (mongoose) => {
     const schema = mongoose.Schema(
         {
-            title: String,
-            body: String,
-            published: Boolean
+            nama: String,
+            hubungan: String,
+            doa: String,
+            hadir: Boolean,
         },
         {timestamps: true}
     )
